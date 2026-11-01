@@ -144,3 +144,81 @@ body{background:radial-gradient(circle at 76% 12%,rgba(25,169,232,.10),transpare
 @media(max-width:1200px){.site-header .brand-logo{width:190px;height:94px}}
 @media(max-width:900px){.site-header .brand-logo{width:155px;height:78px}}
 @media(max-width:600px){.site-header .brand-logo{width:116px;height:64px}.site-header .brand{gap:6px}.site-header .brand-name strong{font-size:17px}.site-header .brand-name small{font-size:6px;letter-spacing:.07em}.footer-company .brand-logo{width:165px;height:80px}}
+
+/* KPME PLC light brand theme: replace the former black site background with white,
+   leaf-green and water-blue surfaces while preserving the existing illustrations. */
+:root{
+  --bg:#f7fbf8;--bg2:#eef7f2;--panel:#ffffff;--panel2:#f2f9f6;
+  --line:rgba(28,112,75,.16);--text:#173b32;--muted:#58736b;--silver:#41675d;
+  --accent:#58b900;--accent2:#079bd5;--shadow:0 18px 48px rgba(22,91,74,.12);
+}
+html,body{background-color:#f7fbf8;color:#173b32;}
+body{background:radial-gradient(circle at 78% 8%,rgba(25,169,232,.12),transparent 29%),radial-gradient(circle at 14% 38%,rgba(121,201,0,.12),transparent 32%),linear-gradient(180deg,#ffffff 0%,#f5fbf7 58%,#eef8fb 100%);color:#173b32;}
+.noise{opacity:.012;}
+.site-header{background:rgba(255,255,255,.91);border-bottom:1px solid rgba(28,112,75,.14);box-shadow:0 5px 24px rgba(25,90,70,.06);}
+.brand,.brand strong{color:#17602f;}
+.brand-name small{color:#087fae!important;}
+.nav-links a,.footer-links a{color:#42665b;}
+.nav-links a:hover,.footer-links a:hover{color:#168d36;}
+.nav-contact{border-color:rgba(25,130,85,.25);}
+.menu-toggle{color:#17602f;}
+.eyebrow{color:#52756a;}
+.hero h1 em,h2 em{background:linear-gradient(100deg,#208d32,#65bd08,#079bd5);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero-text,.about-copy,.centered p,.split>p,.project-info p,.news-body p,.vacancy p,.contact-copy>p{color:#58736b;}
+.hero-stats span,.scroll-cue{color:#668078;}
+.hero-frame{background:#eaf5ef;border-color:rgba(25,169,232,.25);}
+.hero-badge{background:rgba(255,255,255,.93);border-color:rgba(28,112,75,.17);color:#285447;box-shadow:0 12px 28px rgba(30,100,80,.13);}
+.hero-badge span{color:#668078;}
+.btn-primary{color:#fff;background:linear-gradient(120deg,#62bf13,#39a91e 52%,#079bd5);box-shadow:0 10px 28px rgba(44,157,93,.18);}
+.btn-ghost{color:#17604b;border-color:rgba(28,112,75,.25);background:rgba(255,255,255,.75);}
+.btn-ghost:hover{background:#eaf7ef;}
+.marquee{background:linear-gradient(90deg,#edf8e9,#e9f7fb);border-color:rgba(28,112,75,.16);}
+.marquee-track{color:#3d7560;}
+.service-card{background:linear-gradient(145deg,#ffffff,#f0f9f5);border-color:rgba(28,112,75,.15);box-shadow:0 8px 26px rgba(27,100,76,.045);}
+.service-card:before{background:rgba(25,169,232,.12);}
+.service-card:hover{border-color:rgba(25,169,232,.35);box-shadow:0 18px 42px rgba(27,100,76,.12);}
+.service-number{color:#7ca398;}
+.service-card h3,.project-info h3,.news-body h3,.vacancy h3{color:#1c493c;}
+.service-card p{color:#58736b;}
+.service-card a{color:#168b47;}
+.project-card,.news-card{background:#fff;border-color:rgba(28,112,75,.16);box-shadow:0 10px 28px rgba(27,100,76,.07);}
+.project-image span{background:rgba(255,255,255,.93);color:#17604b;border-color:rgba(28,112,75,.18);}
+.news-section{background:linear-gradient(180deg,rgba(230,246,237,.3),#f1f9f8);}
+.news-placeholder{background:radial-gradient(circle at 30% 20%,rgba(121,201,0,.18),transparent 35%),linear-gradient(145deg,#e4f5e9,#e5f5fb);color:#39865b;}
+.date,.vacancy-tag{color:#279b43;}
+.vacancies-section{background:linear-gradient(135deg,#eff8f1,#eef8fc);}
+.vacancy{background:linear-gradient(90deg,#fff,#f4faf8);border-color:rgba(28,112,75,.16);}
+.vacancy-meta{color:#55766b;}
+.vacancy-requirements{border-color:rgba(28,112,75,.18);}
+.contact-section{background:transparent;}
+.footer{background:linear-gradient(135deg,#eaf6ee,#edf7fb);border-top:1px solid rgba(28,112,75,.16);}
+.footer-sitemap h3,.footer-contact h3,.footer-recent-news h3{color:#1b503d;}
+.footer-contact p,.footer-recent-news p{color:#58736b;}
+.footer-contact a,.contact-home-details a:not(.btn),.footer-recent-news a,.footer-links a{color:#326b58;}
+.footer-bottom{border-color:rgba(28,112,75,.15);color:#688278;}
+.footer-social a{color:#267c56;border-color:rgba(28,112,75,.17);}
+.home-about-section{background:linear-gradient(180deg,rgba(230,247,237,.75),rgba(240,249,251,.4));}
+.focus-gallery-section{background:linear-gradient(180deg,#f5fbf7,#edf7f8);}
+.page-hero{background:linear-gradient(135deg,rgba(121,201,0,.12),rgba(25,169,232,.10) 55%,transparent);}
+/* Login and administration surfaces also follow the light KPME identity. */
+.admin-login-page{background:radial-gradient(circle at 18% 20%,rgba(121,201,0,.14),transparent 32%),radial-gradient(circle at 82% 78%,rgba(25,169,232,.14),transparent 34%),#f5faf7;color:#173b32;}
+.login-card{background:rgba(255,255,255,.96);border:1px solid rgba(28,112,75,.16);box-shadow:0 24px 70px rgba(25,90,70,.14);color:#173b32;}
+.login-card h1,.login-card p{color:#244f42;}
+.login-card label,.back-home{color:#42665b;}
+.admin-shell{background:#f5faf7;color:#173b32;}
+.admin-sidebar{background:linear-gradient(180deg,#ffffff,#edf7f2);border-right:1px solid rgba(28,112,75,.16);color:#285447;}
+.admin-sidebar nav a,.admin-sidebar .logout{color:#42665b;}
+.admin-sidebar nav a:hover,.admin-sidebar nav a.active{background:#e3f4e9;color:#167b3b;}
+.admin-main{background:linear-gradient(135deg,#f8fcf9,#eff8fa);color:#173b32;}
+.admin-topbar h1,.admin-section-title h2,.admin-form-card h3{color:#1d4e3f;}
+.admin-form-card,.stat-card,.admin-item,.message-card{background:#fff;border:1px solid rgba(28,112,75,.15);box-shadow:0 8px 25px rgba(27,100,76,.055);color:#285447;}
+.admin-form-card p,.admin-item-copy p,.empty-admin,.message-card p{color:#58736b;}
+.admin-form-card label{color:#42665b;}
+.admin-form-card input,.admin-form-card textarea,.admin-form-card select,.admin-login-page input{background:#fbfefc;color:#173b32;border:1px solid rgba(28,112,75,.22);}
+.admin-form-card input:focus,.admin-form-card textarea:focus,.admin-form-card select:focus{outline:2px solid rgba(25,169,232,.2);border-color:#159bd0;}
+.admin-section{border-color:rgba(28,112,75,.14);}
+.admin-item,.message-card{border-color:rgba(28,112,75,.15);}
+.view-site,.small-btn{background:linear-gradient(120deg,#62bf13,#079bd5);color:#fff;}
+.delete-btn{color:#b63d3d;border-color:rgba(182,61,61,.25);}
+.toast{box-shadow:0 8px 24px rgba(25,90,70,.12);}
+@media(max-width:900px){.site-header{background:rgba(255,255,255,.96);}}

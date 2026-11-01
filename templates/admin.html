@@ -3,7 +3,7 @@
 {% block content %}
 <div class="admin-shell">
   <aside class="admin-sidebar">
-    <a class="brand" href="/">{% if site_logo %}<img class="brand-logo" src="{{ url_for('uploaded_file', filename=site_logo) }}" alt="KPME PLC logo">{% else %}<img class="brand-logo" src="{{ url_for('static', filename='images/kpme-logo.svg') }}" alt="KPME PLC logo">{% endif %}<span><strong>KPME</strong><small>PLC</small></span></a>
+    <a class="brand" href="/">{% if site_logo %}<img class="brand-logo" src="{{ url_for('uploaded_file', filename=site_logo) }}" alt="KPME PLC logo">{% else %}<img class="brand-logo" src="{{ url_for('static', filename='images/kpme-logo.png') }}" alt="KPME PLC logo">{% endif %}<span><strong>KPME</strong><small>PLC</small></span></a>
     <div class="admin-user"><span class="avatar">N</span><div><strong>{{ session.get('admin_username', 'Admin') }}</strong><small>Administrator</small></div></div>
     <nav><a href="#overview">▦ <span>Overview</span></a><a href="#site-content-admin"> <span>Website Content</span></a><a href="#services-admin"> <span>Services</span></a><a href="#projects-admin"> <span>Projects</span></a><a href="#news-admin"> <span>News</span></a><a href="#vacancies-admin"> <span>Vacancies</span></a><a href="#applications-admin"> <span>Applications</span></a><a href="#messages-admin"> <span>Messages {% if unread_messages %}<b class="nav-count">{{ unread_messages }}</b>{% endif %}</span></a></nav>
     <a class="logout" href="{{ url_for('admin_logout') }}">↪ Logout</a>
